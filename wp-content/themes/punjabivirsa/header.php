@@ -11,7 +11,9 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<!-- <meta charset="<?php bloginfo( 'charset' ); ?>" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>
 <?php
 	/*
@@ -68,7 +70,7 @@ if ( is_singular() && get_option( 'thread_comments' ) ) {
 
 			<!-- Logo -->
 			<div class="logo">
-				<a href="<?php echo site_url(); ?>"><img src="http://localhost/punjabivirsa/wp-content/uploads/2023/08/punjabi-logo.png" height="100px" width="200px"></a>
+				<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url();?>/wp-content/uploads/2023/08/punjabi-logo.png" height="100px" width="200px"></a>
 			</div>
 
 			<!-- Navigation -->

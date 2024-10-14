@@ -1,48 +1,39 @@
 <?php 
 get_header();
 ?>
-<div class="container">
+<div class="">
   <section class="ban_sec">
-    <div class="container">
+    <div class="">
       <div class="ban_img">
-  <img src="http://localhost/punjabivirsa/wp-content/uploads/2023/08/abhinav-sharma-2i3LRHALx4E-unsplash-1-scaled.jpg" alt="banner" border="0">
-        <div class="ban_text">
-          
-          <p>"ਸਤਿਗੁਰ ਨਾਨਕ ਪ੍ਰਗਟਿਆ <br>ਮਿਟੀ ਧੁੰਧੁ ਜਗਿ ਚਾਨਣੁ ਹੋਆ।"</p>
-<!--          <a href="#">Lend a hand</a> -->
-        </div>
+          <img src="<?php echo site_url();?>/wp-content/uploads/2023/08/abhinav-sharma-2i3LRHALx4E-unsplash-1-scaled.jpg" alt="banner" border="0">
+      <div class="ban_text">
+         <p>"ਸਤਿਗੁਰ ਨਾਨਕ ਪ੍ਰਗਟਿਆ <br>ਮਿਟੀ ਧੁੰਧੁ ਜਗਿ ਚਾਨਣੁ ਹੋਆ।"</p>
       </div>
-    </div>
-  </section>
+      </div>
+  </div>
+</section>
 </div>
+<div class="container">
 <div class="legends-cstm">
 <h1>ਸ਼ਰਧਾਂਜਲੀ</h1>
 <p class="important-para">ਇਹ ਤਿੰਨੋਂ ਵਿਅਕਤੀਆਂ ਦੀ ਸ਼ਰਧਾਂਜਲੀ ਦੇ ਮੌਕੇ ਸਾਡੇ ਦਿਲਾਂ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦੀ ਯਾਦ ਸਦੀ ਜਿੰਦਗੀ ਭਰ ਜੁਦੀ ਰਹੇਗੀ, ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਯਾਗ ਅਤੇ ਸ੍ਰੇਸ਼ਠ ਯਾਤਰੇ ਨੂੰ ਯਾਦ ਰੱਖਣ ਦਾ ਅਵਸਰ ਹੈ। ਉਨ੍ਹਾਂ ਦੀਆਂ ਆਤਮਾਵਾਦੀ ਉਮੀਦਾਂ ਅਤੇ ਮਹਾਨ ਯਾਤਰਾਵਾਂ ਨੂੰ ਸਮਾਜ ਵਿੱਚ ਯਾਦ ਰੱਖਣਾ ਹੈ, ਜੋ ਸਾਡੇ ਸਮਾਜ ਦੇ ਨਾਗਰਿਕ ਜੀਵਨ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦੇ ਸੰਘਰਸ਼ ਅਤੇ ਯਾਤਰਾਵਾਂ ਦੇ ਮੂਲ ਸੰਦੇਸ਼ ਨੂੰ ਜਿਵੇਂਦਾ ਰਖੇਗਾ।</p>
 <div class="myGallery">
 
   <div class="item">
-    <img src="http://localhost/punjabivirsa/wp-content/uploads/2023/08/sidhu-moosewala.jpg" />
+    <img src="<?php echo site_url();?>/wp-content/uploads/2023/08/sidhu-moosewala.jpg" />
     <span class="caption">Sidhu Moosewala</span>
   </div>
   <div class="item">
-    <img src="http://localhost/punjabivirsa/wp-content/uploads/2023/08/deep-sidhu.jpg" />
+    <img src="<?php echo site_url();?>/wp-content/uploads/2023/08/deep-sidhu.jpg" />
     <span class="caption">Deep Sidhu</span>
   </div>
   <div class="item">
-    <img src="http://localhost/punjabivirsa/wp-content/uploads/2023/08/Sandeep-Nangal-Ambia.webp" />
+    <img src="<?php echo site_url();?>/wp-content/uploads/2023/08/Sandeep-Nangal-Ambia.webp" />
     <span class="caption">Sandeep Nangal</span>
   </div>
-<!--   <div class="item">
-    <img src="https://picsum.photos/190/190?14" />
-    <span class="caption">This is an image caption for image 14</span>
-  </div>
-  <div class="item">
-    <img src="https://picsum.photos/190/190?15" />
-    <span class="caption">This is an image caption for image 15</span>
-  </div> -->
 </div>
 </div>
-<div class="container">
+<div class="">
 
     <section class="testimonial text-center">
 <!--         <div class="container"> -->
@@ -58,44 +49,27 @@ get_header();
         
         <?php // Or your video player code here
 				
-// $args = array(
-//     'post_type' => 'writings',
-//     'post_status' => 'publish',
-//     'posts_per_page' => -1
-// );
-// $posts = new WP_Query( $args );
 
-// print_r($posts);
-// if ( $posts -> have_posts() ) {
-//     while ( $posts -> have_posts() ) {
+          $loop = new WP_Query( array( 'post_type' => 'writings', 'posts_per_page' => -1 ) );
 
-//         the_content();
-//         // Or your video player code here
+          $i=0;
 
-//     }
-// }
-// wp_reset_query();
+          while ( $loop->have_posts() ) : $loop->the_post(); 
 
- $loop = new WP_Query( array( 'post_type' => 'writings', 'posts_per_page' => -1 ) );
+          $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ));
 
- $i=0;
+          $image_path = "$image[0]";
 
-while ( $loop->have_posts() ) : $loop->the_post(); 
+            $i++;
 
-$image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ));
+            if($i==1){
+              echo'<div class="carousel-item active">';
 
- $image_path = "$image[0]";
+            }else{
+              echo'<div class="carousel-item">';
+            }
 
-  $i++;
-
-  if($i==1){
-    echo'<div class="carousel-item active">';
-
-  }else{
-    echo'<div class="carousel-item">';
-  }
-
-  ?>
+       ?>
 
 
 
@@ -146,7 +120,7 @@ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ));
 </div>
 
 <section class="section_all bg-light" id="about">
-            <div class="container">
+            <div class="">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section_title_all text-center">
@@ -177,7 +151,7 @@ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ));
                     </div>
                     <div class="col-lg-6">
                         <div class="img_about mt-3">
-                            <img src="http://localhost/punjabivirsa/wp-content/uploads/2023/08/abhinav-sharma-Js76NA2Qnzg-unsplash-1-scaled.jpg" alt="" class="img-fluid mx-auto d-block">
+                            <img src="<?php echo site_url();?>/wp-content/uploads/2023/08/abhinav-sharma-Js76NA2Qnzg-unsplash-1-scaled.jpg" alt="" class="img-fluid mx-auto d-block">
                         </div>
                     </div>
                 </div>
@@ -239,7 +213,7 @@ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ));
   
 </section>  
   
-  
+<!-- </div -->
 
 <?php 
 

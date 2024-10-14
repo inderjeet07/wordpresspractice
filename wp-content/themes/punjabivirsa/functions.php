@@ -772,13 +772,16 @@ function punjabivirsa_custom() {
 // 		  wp_enqueue_script('js-validate-plugin','https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js');
 
 		
-    wp_enqueue_style('my-custom-css', get_template_directory_uri().'/assets/style.css');
 	wp_enqueue_style('my-boot-css','https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
+	wp_enqueue_style('my-custom-css', get_template_directory_uri().'/assets/style.css');
+
 	  wp_enqueue_style('font-awesome','https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 //       wp_enqueue_script('jquery','https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js');
 	 wp_enqueue_script('bootstap','https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js');
 
     wp_enqueue_script('my-custom-js', get_template_directory_uri().'/assets/custom.js');
+
+
   
 }
 add_action('wp_enqueue_scripts', 'punjabivirsa_custom');

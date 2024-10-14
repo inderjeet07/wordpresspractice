@@ -10,9 +10,9 @@
  * @since punjabivirsa 1.0
  */
 ?>
-<div class="container">
 
 <footer>
+   <!-- <div class="container"> -->
 	<div class="footer-content">
     <h3>Punjabi Virsa</h3>
 		<p>We Love Punjab</p>
@@ -35,9 +35,9 @@
  </ul>
 </div>
 </div>
+</div>
 	
 </footer>
-</div>
 
 </body>
 </html>
