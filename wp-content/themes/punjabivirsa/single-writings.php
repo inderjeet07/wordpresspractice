@@ -2,7 +2,7 @@
 
 get_header();
  ?>
- <div class="container-single-cstm">
+ <div class="container-single-cstm container-cstm">
 <div style="margin: 0 auto;">
   <div class="bacon-blog-post bacon-shadow">
 
@@ -14,7 +14,10 @@ get_header();
   </div>
 </div>
 </div>
-</div>
+<div class="container-cstm">
  <?php 
+
 get_footer();
+
 ?>
+</div>

@@ -65,12 +65,12 @@ if ( is_singular() && get_option( 'thread_comments' ) ) {
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <header>
-	<div class="container">
+	<div class="container-cstm">
 		<nav class="navigation">
 
 			<!-- Logo -->
 			<div class="logo">
-				<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url();?>/wp-content/uploads/2023/08/punjabi-logo.png" height="100px" width="200px"></a>
+				<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url();?>/wp-content/uploads/2023/10/New_Project__3_-removebg-preview.png" height="100px" width="200px"></a>
 			</div>
 
 			<!-- Navigation -->

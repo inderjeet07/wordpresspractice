@@ -1,3 +1,13 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /wordpresspractice/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wordpresspractice/index.php [L]
+</IfModule>
+
 
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
@@ -6,11 +16,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /punjabivirsa/
+RewriteBase /wordpresspractice/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /punjabivirsa/index.php [L]
+RewriteRule . /wordpresspractice/index.php [L]
 </IfModule>
 
 # END WordPress

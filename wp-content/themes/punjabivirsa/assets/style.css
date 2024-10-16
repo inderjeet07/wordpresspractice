@@ -15,31 +15,53 @@ html,body{
     max-width: 2080px !important;
   padding:unset !important;
 } */
-.container {
+.container-cstm {
   width: 92%;
   height: 100%;
-  border: 1px solid;
+  /* border: 1px solid; */
   margin: auto;
 }
 
+.profiles-wrapper .email {
+  font-size: 27px;
+}
+
+.welcome-message {
+  font-size: 27px;
+}
+
 /* tablet */
-@media only screen and (min-width: 576px) {
-  .container {
+/* @media only screen and (min-width: 576px) {
+  .container-cstm {
     width: 540px;  
   }
-}
+} */
 
 /* desktop */
 @media only screen and (min-width: 1200px) {
-  .container {
-    width: 1440px; /* Removed !important */
+  .container-cstm {
+    width: 1140px; /* Removed !important */
   }
+  .profiles-wrapper .email {
+    font-size: 30px;
+}
+.welcome-message {
+  font-size: 77px;
+}
+
 }
 
 @media only screen and (min-width: 1400px) {
-  .container {
+  .container-cstm {
     width: 1440px; /* Removed !important */
   }
+  .profiles-wrapper .email {
+    font-size: 30px;
+}
+.welcome-message {
+  font-size: 35px;
+}
+
 }
 
 
@@ -565,16 +587,16 @@ display: block;
     display: flex;
 } */
   
-  .welcome-message {
+  /* .welcome-message {
     font-size: 100px;
-}
-  .profiles-wrapper .email {
+} */
+  /* .profiles-wrapper .email {
     font-size: 60px;
-}
+} */
   
   .formbold-form-wrapper {
     margin: 0 auto;
-    max-width: 1000px !important;
+    /* max-width: 1000px !important; */
     width: 100%;
     background: white;
 }
@@ -1148,10 +1170,10 @@ hr {
     margin: 0 auto;
   }
  
-  
+/*   
   .name, .email, textarea {
     width: 280px;
-  } 
+  }  */
   
   .direct-contact-container {
     margin-top: 60px;
@@ -1405,7 +1427,7 @@ body.page-template-our-services p.comon-para {
   line-height: 1.45;
 }
 
-.bacon-blog-post-inner { padding: 42px; }
+/* .bacon-blog-post-inner { padding: 42px; } */
 
 .bacon-blog-post .wp-post-image {
   width: 100%;
@@ -1451,7 +1473,7 @@ body.page-template-our-services p.comon-para {
   border-left: rgb(224,40,43) solid 0.25em;
   font-style: italic;
 }
-
+/* 
 .bacon-shadow:after {
   position: absolute;
   content: "";
@@ -1460,7 +1482,7 @@ body.page-template-our-services p.comon-para {
   bottom: 0px;
   z-index: -1;
   box-shadow: 0 0 30px 4px rgba(0,0,0,0.60);
-}
+} */
 .container-single-cstm p {
     font-weight: 600;
     color: #6c757d!important;
@@ -1487,11 +1509,11 @@ blockquote {
 
 .form-modal{
     position:relative;
-    width:650px;
+    /* width:650px; */
     height:auto;
-    margin-top:4em;
-    left:50%;
-    transform:translateX(-50%);
+    /* margin-top:4em; */
+    /* left:50%; */
+    /* transform:translateX(-50%);ssss */
     background:#fff;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -1515,7 +1537,7 @@ blockquote {
     border:none;
     font-weight: bold;
     font-size:1.2em;
-    padding:0.8em 1em 0.8em 1em!important;
+    /* padding:0.8em 1em 0.8em 1em!important; */
     transition:0.5s;
     border:1px solid #ebebeb;
     margin-bottom:0.5em;
@@ -1691,18 +1713,18 @@ label.all-field-lable {
 .profiles-wrapper {
     padding: 2vw 1vw 1vw 1vw;
     margin: 1vw 0 1vw 1vw;
-    background-color: #FF9933;
-    flex-basis: 24%;
-    flex-grow: 0;
-    border: 2px solid;
-    border-radius: 20px;
+    /* background-color: #FF9933; */
+    flex-basis: 40%;
+    /* flex-grow: 0; */
+    /* border: 2px solid; */
+    /* border-radius: 20px; */
 }
 .profiles-wrapper .picture {
   text-align: center;
 }
 
 .rounded-img {
-  width: 80%;
+  width: 35%;
   height: auto;
   border-radius: 50%;
   transform: scale(1);
@@ -1742,7 +1764,7 @@ label.all-field-lable {
 }
 
 .blogs-wrapper {
-  flex-basis: 70%;
+  flex-basis: 60%;
   flex-grow: 0;
   padding: 0.5vw;
   font-size: 0;
@@ -1781,12 +1803,12 @@ label.all-field-lable {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 48px;
+    /* padding: 48px; */
   }
 
   .formbold-form-wrapper {
     margin: 0 auto;
-    max-width: 550px;
+    /* max-width: 550px; */
     width: 100%;
     background: white;
   }
@@ -1947,7 +1969,11 @@ label.all-field-lable {
 }
 
 .profiles-wrapper h1, h3 {
-    color: white !important;
+    color: black !important;
+    font-size: 30px;
+}
+h3.name {
+  font-size: 19px;
 }
 
   @media (min-width: 540px) {
@@ -1971,10 +1997,10 @@ label.all-field-lable {
   .wrapper {
     display: block !important;
 }
-  .welcome-message {
+  /* .welcome-message {
     font-size: 100px;
     color: white;
-}
+} */
 }
 .error {
     color: red;

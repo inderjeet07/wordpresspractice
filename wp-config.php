@@ -20,13 +20,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'punjabivirsa' );
+define( 'DB_NAME', 'practice' );
 
 /** Database username */
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'Cssoft@123#' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -80,6 +80,9 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+
+define('FS_METHOD', 'direct');
+
 
 /* Add any custom values between this line and the "stop editing" line. */
 
